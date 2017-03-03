@@ -1,0 +1,27 @@
+package String;
+
+public class JudgeEquals {
+
+	public static void main(String args[]) {
+		String a = "hello";
+		String b = "hel" + "lo";
+		String c = "hel" + new String("lo");
+		String d = "hel";
+		final String e = "lo";
+		String f = d + e;
+		String g = "lo";
+		String h = d + g;
+		String i = "hel" + e;
+		String j = h.intern();
+		System.out.println("a hashcode:" + a.hashCode() + "  b hashcode:" + b.hashCode());
+		System.out.println("a == b " + (a == b));
+		System.out.println("a hashcode:" + a.hashCode() + "  c hashcode:" + c.hashCode());
+		System.out.println("a == c " + (a == c));
+		System.out.println("a hashcode:" + a.hashCode() + "  f hashcode:" + f.hashCode());
+		System.out.println("a == f " + (a == f));
+		System.out.println("a hashcode:" + a.hashCode() + "  h hashcode:" + h.hashCode());
+		System.out.println("a == h " + (a == h));
+		System.out.println("a == h.intern " + (a == j));
+		System.out.println("a == i " + (a == i));
+	}
+}
