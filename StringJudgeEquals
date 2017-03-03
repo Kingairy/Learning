@@ -2,6 +2,10 @@ package String;
 
 public class JudgeEquals {
 
+	/***
+	 * jdk 1.7.49
+	 * @param args
+	 */
 	public static void main(String args[]) {
 		String a = "hello";
 		String b = "hel" + "lo";
