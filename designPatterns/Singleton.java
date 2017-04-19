@@ -18,6 +18,7 @@ public class Singleton {
 			} else
 				throw new RuntimeException("Singleton invaded!");
 		}
+		System.out.println("Singlton create!");
 	}
 
 	private static class SingletonHolder {
